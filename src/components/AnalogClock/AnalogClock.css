@@ -1,0 +1,194 @@
+/* AnalogClock.css */
+#clock {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tick {
+  background-color: black;
+  height: 20px;
+  width: 5px;
+  position: absolute;
+  &::after {
+    font-size: 30px;
+    position: absolute;
+    left: -5px;
+    top: 20px;
+  }
+}
+
+.tick:nth-child(1)::after {
+  content: "1";
+}
+
+.tick:nth-child(2)::after {
+  content: "2";
+}
+
+.tick:nth-child(3)::after {
+  content: "3";
+}
+
+.tick:nth-child(4)::after {
+  content: "4";
+}
+
+.tick:nth-child(5)::after {
+  content: "5";
+}
+
+.tick:nth-child(6)::after {
+  content: "6";
+  position: absolute;
+  left: -5px;
+  top: -35px;
+}
+
+.tick:nth-child(7)::after {
+  content: "7";
+}
+
+.tick:nth-child(8)::after {
+  content: "8";
+}
+
+.tick:nth-child(9)::after {
+  content: "9";
+}
+
+.tick:nth-child(10)::after {
+  content: "10";
+  left: -12px;
+}
+
+.tick:nth-child(11)::after {
+  content: "11";
+  left: -12px;
+}
+
+.tick:nth-child(12)::after {
+  content: "12";
+  left: -12px;
+}
+
+.oneEleven {
+  /* ~6.7% */
+  top: 33.5px;
+}
+
+.twoTen {
+  /* 25% */
+  top: 125px;
+}
+
+.threeNine {
+  /* 50% */
+  top: 250px;
+}
+
+.fourEight {
+  /* 25% */
+  bottom: 125px;
+}
+
+.fiveSeven {
+  /* ~6.7% */
+  bottom: 33.5px;
+}
+
+#one {
+  right: 125px;
+  transform: rotate(30deg);
+}
+
+#two {
+  /* ~93.3% */
+  right: 33.5px;
+  transform: rotate(60deg);
+}
+
+#three {
+  right: 8px;
+  transform: rotate(90deg);
+}
+
+#four {
+  right: 33.5px;
+  transform: rotate(120deg);
+}
+
+#five {
+  right: 125px;
+  transform: rotate(150deg);
+}
+
+#six {
+  left: 250px;
+  bottom: 0px;
+}
+
+#seven {
+  left: 125px;
+  transform: rotate(-150deg);
+}
+
+#eight {
+  left: 33.5px;
+  transform: rotate(-120deg);
+}
+
+#nine {
+  left: 8px;
+  transform: rotate(-90deg);
+}
+
+#ten {
+  left: 33.5px;
+  transform: rotate(-60deg);
+}
+
+#eleven {
+  left: 125px;
+  transform: rotate(-30deg);
+}
+
+#twelve {
+  left: 250px;
+  top: 0px;
+}
+
+.hand {
+  position: absolute;
+  transform-origin: center bottom;
+  transform: rotate(90deg);
+  background: #333;
+}
+
+.hour {
+  height: 100px;
+  width: 8px;
+  top: 31%;
+  left: 50%;
+}
+
+.minute {
+  height: 160px;
+  width: 4px;
+  top: 19%;
+  left: 50%;
+  background: #666;
+}
+
+.second {
+  height: 160px;
+  width: 2px;
+  top: 19%;
+  left: 50%;
+  background: red;
+}
